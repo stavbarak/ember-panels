@@ -1,29 +1,39 @@
 <h2>{{title}}</h2>
 
-{{#each accounts as |account|}}
 
 <div class="container">
-  <div class="col">
-    <div class="col-title">{{account.id}}</div>
+    <div class="cell title">ID</div>
+    <div class="cell title">Reseller</div>
+    <div class="cell title">Status</div>
+    <div class="cell title long">Email</div>
+    <div class="cell title">Telephone</div>
+    <div class="cell title">Fax Number</div>
+    <div class="cell title">Creation Date</div>
   </div>
-  <div class="col">
-    <div class="col-title">{{account.reseller}}</div>
-  </div>
-  <div class="col">
-    <div class="col-title">{{account.status}}</div>
-  </div>
-  <div class="col">
-    <div class="col-title">{{account.email}}</div>
-  </div>
-  <div class="col">
-    <div class="col-title">{{account.telephone}}</div>
-  </div>
-  <div class="col">
-    <div class="col-title">{{account.faxNumber}}</div>
-  </div>
-  <div class="col">
-    <div class="col-title">{{account.creationDate}}</div>
-  </div>
-</div>
+{{#each accounts as |account|}}
+
+ <div class="container">
+    <div class="cell">
+      <div class="cell-content">{{account.id}}</div>
+    </div>
+    <div class="cell">
+      <div class="cell-content">{{account.reseller}}</div>
+    </div>
+    <div class="cell">
+      <div class="cell-content">{{account.status}}</div>
+    </div>
+    <div class="cell long">
+      <div class="cell-content">{{account.email}}</div>
+    </div>
+    <div class="cell">
+      <div class="cell-content">{{account.telephone}}</div>
+    </div>
+    <div class="cell">
+      <div class="cell-content">{{account.faxNumber}}</div>
+    </div>
+    <div class="cell">
+      <div class="cell-conent">{{account.creationDate}}</div>
+    </div>
+</div> 
 
 {{/each}}

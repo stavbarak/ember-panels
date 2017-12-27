@@ -1,11 +1,35 @@
-<h1>Test</h1>
-{{!-- Name: {{model.name}} <br>
-Height: {{model.height}} <br>
-Weight: {{model.weight}} <br>
-Skin Color: {{model.skin_color}} <br>
-Eye Color: {{model.eye_color}} <br>
-Hair Color: {{model.hair_color}} <br>
-Birth Year: {{model.birth_year}} <br>
-Gender: {{model.gender}} <br> --}}
+<h1>Manage Account {{model.id}}</h1>
+<form action="/my-handling-form-page" method="post">
+    <div>
+        <label for="id">ID:</label>
+        <input type="text" id="id" name={{model.id}} value={{model.id}}>
+    </div>
+    <div>
+        <label for="id">reseller:</label>
+        <input type="text" id="id" name={{model.reseller}} value={{model.reseller}}>
+    </div>
+    <div>
+        <label for="id">Status:</label>
+        <input type="text" id="id" name={{model.status}} value={{model.status}}>
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" name={{model.email}} value={{model.email}}>
+    </div>
+    <div>
+        <label for="id">Telephone:</label>
+        <input type="text" id="id" name={{model.telephone}} value={{model.telephone}}>
+    </div>
+    <div>
+        <label for="id">Fax Number:</label>
+        <input type="text" id="id" name={{model.faxNumber}} value={{model.faxNumber}}>
+    </div>
+    <div>
+        <label for="id">Creation Date:</label>
+        <input type="text" id="id" name={{model.creationDate}} value={{model.creationDate}}>
+    </div>
+
+    <input type="submit" value="Send Request">
+</form>
 
 {{outlet}}

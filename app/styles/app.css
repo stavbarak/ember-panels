@@ -1,5 +1,21 @@
-.main-title {
+.main-title, form {
     font-family: sans-serif;
+}
+
+.category-label{
+    width: 200px;
+    background-color: #c0f4ff;
+    margin-right: 10px;
+}
+
+.category{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+input[type='text'], input[type='email']
+{
+    width: 200px;
 }
 
 .container {

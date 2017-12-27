@@ -1,31 +1,48 @@
-<h1>Manage Account {{model.id}}</h1>
+<h3 class="main-title">Manage Account ID: {{model.id}}</h3>
 <form action="/my-handling-form-page" method="post">
-    <div>
-        <label for="id">ID:</label>
-        <input type="text" id="id" name={{model.id}} value={{model.id}}>
-    </div>
-    <div>
-        <label for="id">reseller:</label>
+
+    <div class="category">
+        <label class="category-label" for="id">reseller:</label>
         <input type="text" id="id" name={{model.reseller}} value={{model.reseller}}>
     </div>
-    <div>
-        <label for="id">Status:</label>
+    <div class="category">
+        <label class="category-label" for="id">Status:</label>
         <input type="text" id="id" name={{model.status}} value={{model.status}}>
     </div>
-    <div>
-        <label for="mail">E-mail:</label>
+    <div class="category">
+        <label class="category-label" for="mail">E-mail:</label>
         <input type="email" name={{model.email}} value={{model.email}}>
     </div>
-    <div>
-        <label for="id">Telephone:</label>
+    <div class="category">
+        <label class="category-label" for="id">Address:</label>
+        <input type="text" id="id" name={{model.address}} value={{model.address}}>
+    </div>
+    <div class="category">
+        <label class="category-label" for="id">City:</label>
+        <input type="text" id="id" name={{model.city}} value={{model.city}}>
+    </div>
+    <div class="category">
+        <label class="category-label" for="id">Zip:</label>
+        <input type="text" id="id" name={{model.zip}} value={{model.zip}}>
+    </div>
+    <div class="category">
+        <label class="category-label" for="id">Country:</label>
+        <input type="text" id="id" name={{model.country}} value={{model.country}}>
+    </div>
+    <div class="category">
+        <label class="category-label" for="id">Region:</label>
+        <input type="text" id="id" name={{model.region}} value={{model.region}}>
+    </div>
+    <div class="category">
+        <label class="category-label" for="id">Telephone:</label>
         <input type="text" id="id" name={{model.telephone}} value={{model.telephone}}>
     </div>
-    <div>
-        <label for="id">Fax Number:</label>
+    <div class="category"> 
+        <label class="category-label" for="id">Fax Number:</label>
         <input type="text" id="id" name={{model.faxNumber}} value={{model.faxNumber}}>
     </div>
-    <div>
-        <label for="id">Creation Date:</label>
+    <div class="category">
+        <label class="category-label" for="id">Creation Date:</label>
         <input type="text" id="id" name={{model.creationDate}} value={{model.creationDate}}>
     </div>
 

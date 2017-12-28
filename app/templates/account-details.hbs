@@ -7,11 +7,11 @@
     </div>
     <div class="category">
         <label class="category-label" for="id">Status:</label>
-        <input type="text" id="id" name={{model.status}} value={{model.status}}>
+        <input type="text" id="id" name={{model.status}} value={{model.status}} pattern="[a-zA-Z]+">
     </div>
     <div class="category">
         <label class="category-label" for="mail">E-mail:</label>
-        <input type="email" name={{model.email}} value={{model.email}}>
+        <input type="email" name={{model.email}} value={{model.email}} pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address">
     </div>
     <div class="category">
         <label class="category-label" for="id">Address:</label>
@@ -19,7 +19,7 @@
     </div>
     <div class="category">
         <label class="category-label" for="id">City:</label>
-        <input type="text" id="id" name={{model.city}} value={{model.city}}>
+        <input type="text" id="id" name={{model.city}} value={{model.city}} pattern="[a-zA-Z]+">
     </div>
     <div class="category">
         <label class="category-label" for="id">Zip:</label>
@@ -27,11 +27,11 @@
     </div>
     <div class="category">
         <label class="category-label" for="id">Country:</label>
-        <input type="text" id="id" name={{model.country}} value={{model.country}}>
+        <input type="text" id="id" name={{model.country}} value={{model.country}} pattern="[a-zA-Z]+">
     </div>
     <div class="category">
         <label class="category-label" for="id">Region:</label>
-        <input type="text" id="id" name={{model.region}} value={{model.region}}>
+        <input type="text" id="id" name={{model.region}} value={{model.region}} pattern="[a-zA-Z]+">
     </div>
     <div class="category">
         <label class="category-label" for="id">Telephone:</label>
@@ -43,10 +43,10 @@
     </div>
     <div class="category">
         <label class="category-label" for="id">Creation Date:</label>
-        <input type="text" id="id" name={{model.creationDate}} value={{model.creationDate}}>
+        <input type="text" id="id" name={{model.creationDate}} value={{model.creationDate}} disabled>
     </div>
 
-    <input type="submit" value="Send Request">
+    <button>Save</button>
 </form>
 
 {{outlet}}

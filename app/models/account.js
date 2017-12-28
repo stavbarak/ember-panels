@@ -7,10 +7,10 @@ export default DS.Model.extend({
     email: DS.attr(),
     telephone: DS.attr(),
     faxNumber: DS.attr(),
-    creationDate: DS.attr(),
+    creationDate: DS.attr('date'),
     address: DS.attr(),
     city: DS.attr(),
     country: DS.attr(),
     region: DS.attr(),
-    zip: DS.attr()
+    zip: DS.attr('number')
 });

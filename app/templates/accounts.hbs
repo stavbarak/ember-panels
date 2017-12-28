@@ -1,15 +1,4 @@
-{{!-- <ul>
-    {{#each model as |account|}}
-        <li>
-            {{#account-list-entry account=account}}
-            {{/account-list-entry}}
-        </li>
-    {{/each}}
-</ul>    --}}
-
-
 <h2>{{title}}</h2>
-
 
 <div class="container">
     <div class="cell title">ID</div>
@@ -24,7 +13,8 @@
 
  <div class="container">
     <div class="cell">
-      <div class="cell-content">{{#account-list-entry account=account}}{{account.id}}{{/account-list-entry}}</div>
+       <div class="cell-content">{{#account-list-entry account=account}}{{account.id}}{{/account-list-entry}}</div> 
+       {{!-- <div class="cell-content">{{account.id}}</div> --}}
     </div>
     <div class="cell">
       <div class="cell-content">{{account.reseller}}</div>

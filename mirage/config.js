@@ -6,7 +6,7 @@ export default function() {
 
     this.get('/accounts/:id', (schema, request)=> {
     var id = request.params.id;
-    console.log(schema.accounts.find(id));
+    return schema.accounts.findBy({id:id});
   }); 
 
 

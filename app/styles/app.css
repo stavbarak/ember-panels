@@ -3,7 +3,7 @@
 }
 
 .category-label{
-    width: 200px;
+    width: 191px;
     background-color: #c0f4ff;
     margin-right: 10px;
 }
@@ -15,7 +15,7 @@
 
 input[type='text'], input[type='email']
 {
-    width: 200px;
+    width: 191px;
 }
 
 .container {
@@ -27,6 +27,9 @@ input[type='text'], input[type='email']
     border-bottom: 2px solid #afabab;
 } 
 
+.cell.title.narrow{
+    display: none;
+}
 
 .cell.long{
     width: 218px;
@@ -52,10 +55,34 @@ input[type='text'], input[type='email']
 }
 
 @media screen and (max-width: 765px) {
-     /* TODO something more responsive */
 
-    .cell {
-        font-size: 10px;
+    .cell, .cell.long {
+        width: initial;
+        display: flex;
+        text-indent: 16px;
+        border: none;
+        align-items: center;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+     .cell.title.narrow{
+         display: inline-block;
+         width: 20%;
+     }
+
+    .cell:last-child{
+        border: none;
+    }
+
+    .cell.title.wide{
+        display: none;
+    }
+
+    .cell-content{
+        display: inline-block;
+        width: 70%;
     }
 }
 

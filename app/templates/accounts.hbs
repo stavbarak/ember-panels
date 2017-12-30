@@ -1,38 +1,46 @@
 <h2>{{title}}</h2>
 
 <div class="container">
-    <div class="cell title">ID</div>
-    <div class="cell title">Reseller</div>
-    <div class="cell title">Status</div>
-    <div class="cell title long">Email</div>
-    <div class="cell title">Telephone</div>
-    <div class="cell title">Fax Number</div>
-    <div class="cell title">Creation Date</div>
+    <div class="cell title wide">ID</div>
+    <div class="cell title wide">Reseller</div>
+    <div class="cell title wide">Status</div>
+    <div class="cell title wide long">Email</div>
+    <div class="cell title wide">Telephone</div>
+    <div class="cell title wide">Fax Number</div>
+    <div class="cell title wide">Creation Date</div>
   </div>
 {{#each model as |account|}}
 
  <div class="container">
     <div class="cell">
-       <div class="cell-content">{{#account-list-entry account=account}}{{account.id}}{{/account-list-entry}}</div> 
-       {{!-- <div class="cell-content">{{account.id}}</div> --}}
+       <div class="cell title narrow">ID:</div>
+       <div class="cell-content">
+         {{#account-list-entry account=account}}{{account.id}}{{/account-list-entry}}
+      </div> 
     </div>
     <div class="cell">
+      <div class="cell title narrow">Reseller:</div>
       <div class="cell-content">{{account.reseller}}</div>
     </div>
     <div class="cell">
+      <div class="cell title narrow">Status:</div>
       <div class="cell-content">{{account.status}}</div>
     </div>
     <div class="cell long">
+      <div class="cell title narrow">Email:</div>
       <div class="cell-content">{{account.email}}</div>
     </div>
     <div class="cell">
+      <div class="cell title narrow">Telephone:</div>
       <div class="cell-content">{{account.telephone}}</div>
     </div>
     <div class="cell">
+      <div class="cell title narrow">Fax Number:</div>
       <div class="cell-content">{{account.faxNumber}}</div>
     </div>
     <div class="cell">
-      <div class="cell-conent">{{account.creationDate}}</div>
+      <div class="cell title narrow">Creation Date:</div>
+      <div class="cell-content">{{account.creationDate}}</div>
     </div>
 </div> 
 

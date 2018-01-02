@@ -8,6 +8,7 @@ export default Controller.extend({
     },
 
     saveChanges(account){
+        account.save();
         this.transitionToRoute('accounts');
     }    
 });

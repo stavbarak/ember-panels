@@ -4,9 +4,14 @@ export default function() {
     return schema.accounts.all();
   });
 
-    this.get('/accounts/:id', (schema, request)=> {
+  this.get('/accounts/:id', (schema, request)=> {
     var id = request.params.id;
-    return schema.accounts.findBy({id:id});
+    return schema.accounts.findBy({id});
+  }); 
+
+    this.patch('/accounts/:id', (schema, request)=> {
+    var id = request.params.id;
+    return schema.accounts.find(id);
   }); 
 
 
